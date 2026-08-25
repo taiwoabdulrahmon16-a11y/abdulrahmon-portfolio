@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,19 +11,19 @@
 
     <meta
         name="description"
-        content="AbdulRahmon Taiwo — Frontend Developer, UI/UX Designer and Python Developer. Explore selected projects in web development, interface design and software development."
+        content="SaGe — Frontend Developer and UI/UX Designer creating thoughtful digital experiences."
     >
 
     <meta
         name="author"
-        content="SaGe001"
+        content="SaGe"
     >
 
     <title>
-        AbdulRahmon Taiwo | Frontend Developer & UI/UX Designer
+        SaGe — Frontend Developer & UI/UX Designer
     </title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link
         rel="preconnect"
         href="https://fonts.googleapis.com"
@@ -37,78 +36,64 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?=Inter:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Main CSS -->
+    <!-- Main stylesheet -->
     <link
         rel="stylesheet"
         href="css/style.css"
     >
-
 </head>
 
 
 <body>
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
 
     <header class="site-header">
 
-        <nav
-            class="navbar"
-            aria-label="Main navigation"
-        >
+        <nav class="navbar">
 
             <a
                 href="#home"
                 class="logo"
-                aria-label="AbdulRahmon Taiwo home"
+                aria-label="SaGe home"
             >
                 SaGe<span>.</span>
             </a>
 
 
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
+            <div class="nav-links">
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <a
+                href="#contact"
+                class="nav-cta"
             >
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
+                Let's Talk
+            </a>
 
         </nav>
 
@@ -116,35 +101,55 @@
 
 
 
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
     <main>
 
 
-        <!-- =================================================
+        <!-- =====================================
              HERO
-        ================================================== -->
+        ====================================== -->
 
         <section
             id="home"
             class="hero"
         >
 
+            <!-- Decorative background elements -->
+
+            <div
+                class="hero-orb orb-one"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-orb orb-two"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-orb orb-three"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- Hero content -->
+
             <div class="hero-content">
 
                 <p class="eyebrow">
-                    Frontend Developer • UI/UX Designer • Python Developer
+                    FRONTEND DEVELOPMENT · UI/UX DESIGN
                 </p>
 
 
-                <h1>
+                <h1 class="hero-title">
 
-                    I build digital experiences
+                    I create
 
                     <span>
-                        that solve real problems.
+                        digital experiences.
                     </span>
 
                 </h1>
@@ -152,10 +157,10 @@
 
                 <p class="hero-description">
 
-                    I design and develop responsive digital
-                    experiences, combining thoughtful UI/UX
-                    design with frontend development and
-                    Python programming.
+                    I'm SaGe — a frontend developer
+                    and UI/UX designer focused on transforming
+                    ideas and real-world problems into thoughtful,
+                    functional digital products.
 
                 </p>
 
@@ -166,39 +171,49 @@
                         href="#projects"
                         class="btn btn-primary"
                     >
-                        View My Work
+                        Explore my work
                     </a>
 
 
                     <a
                         href="#contact"
-                        class="btn btn-secondary"
+                        class="btn btn-glass"
                     >
-                        Let's Connect
+                        Let's connect
                     </a>
 
                 </div>
 
-
-                <div class="hero-links">
-
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
+            </div>
 
 
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
+            <!-- Hero visual -->
 
+            <div
+                class="hero-visual"
+                aria-hidden="true"
+            >
+
+                <div class="glass-orb">
+
+                    <div class="orb-highlight"></div>
+
+                </div>
+
+
+                <div class="floating-bubble bubble-one"></div>
+
+                <div class="floating-bubble bubble-two"></div>
+
+                <div class="floating-bubble bubble-three"></div>
+
+
+                <div class="floating-label label-one">
+                    DESIGN
+                </div>
+
+                <div class="floating-label label-two">
+                    CODE
                 </div>
 
             </div>
@@ -207,25 +222,24 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================
              ABOUT
-        ================================================== -->
+        ====================================== -->
 
         <section
             id="about"
             class="section about-section"
         >
 
-            <div class="section-heading">
+            <div class="section-intro">
 
-                <p class="eyebrow">
-                    About Me
+                <p class="section-label">
+                    ABOUT ME
                 </p>
 
-
                 <h2>
-                    Designing interfaces.
-                    Building solutions.
+                    Where design
+                    <span>meets technology.</span>
                 </h2>
 
             </div>
@@ -233,34 +247,81 @@
 
             <div class="about-content">
 
-                <p>
+                <div class="about-text">
 
-                    I'm a frontend developer and UI/UX designer
-                    interested in creating digital products
-                    that are useful, accessible, responsive
-                    and easy to understand.
+                    <p>
+                        I'm SaGe, a frontend developer
+                        and UI/UX designer interested in creating
+                        digital products that are useful, intuitive
+                        and visually engaging.
+                    </p>
 
-                </p>
+                    <p>
+                        My approach combines design thinking with
+                        development — from understanding a problem
+                        and designing a solution to turning that
+                        solution into a responsive web experience.
+                    </p>
+
+                </div>
 
 
-                <p>
+                <div class="about-highlights">
 
-                    Alongside frontend development and interface
-                    design, I have a programming background in
-                    Python and experience working with backend
-                    concepts, data and application logic.
+                    <article class="glass-card">
 
-                </p>
+                        <span class="card-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Think
+                        </h3>
+
+                        <p>
+                            Understand the problem before
+                            designing the solution.
+                        </p>
+
+                    </article>
 
 
-                <p>
+                    <article class="glass-card">
 
-                    I enjoy turning ideas and real-world problems
-                    into practical digital solutions while
-                    continuously improving my skills through
-                    hands-on projects.
+                        <span class="card-number">
+                            02
+                        </span>
 
-                </p>
+                        <h3>
+                            Design
+                        </h3>
+
+                        <p>
+                            Create clear and purposeful
+                            user experiences.
+                        </p>
+
+                    </article>
+
+
+                    <article class="glass-card">
+
+                        <span class="card-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Build
+                        </h3>
+
+                        <p>
+                            Turn concepts into functional
+                            digital products.
+                        </p>
+
+                    </article>
+
+                </div>
 
             </div>
 
@@ -268,473 +329,129 @@
 
 
 
-        <!-- =================================================
-             PROJECTS
-        ================================================== -->
-
-        <section
-            id="projects"
-            class="section projects-section"
-        >
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    Selected Work
-                </p>
-
-
-                <h2>
-                    Projects I've worked on
-                </h2>
-
-
-                <p>
-
-                    A selection of projects that demonstrate
-                    my approach to design, development and
-                    problem solving.
-
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- =================================================
-                     IEMS
-                ================================================== -->
-
-                <article class="project-card">
-
-                    <div class="project-image project-iems">
-
-                        <svg
-                            class="project-icon"
-                            viewBox="0 0 64 64"
-                            aria-hidden="true"
-                        >
-
-                            <rect
-                                x="8"
-                                y="14"
-                                width="48"
-                                height="36"
-                                rx="7"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                            />
-
-                            <path
-                                d="M8 25h48"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                            />
-
-                            <circle
-                                cx="18"
-                                cy="20"
-                                r="2"
-                                fill="currentColor"
-                            />
-
-                            <circle
-                                cx="25"
-                                cy="20"
-                                r="2"
-                                fill="currentColor"
-                            />
-
-                            <path
-                                d="M21 36h22M21 43h14"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                            />
-
-                        </svg>
-
-
-                        <span>
-                            Examination Management System
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            Web Application
-                        </p>
-
-
-                        <h3>
-                            Intelligent Examination
-                            Management System
-                        </h3>
-
-
-                        <p>
-
-                            A digital examination management
-                            concept designed to improve student
-                            check-in, reduce congestion and
-                            provide better examination centre
-                            coordination.
-
-                        </p>
-
-
-                        <div class="project-tech">
-
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Project
-                            </a>
-
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- =================================================
-                     FINANCE TRACKER
-                ================================================== -->
-
-                <article class="project-card">
-
-                    <div class="project-image project-finance">
-
-                        <svg
-                            class="project-icon"
-                            viewBox="0 0 64 64"
-                            aria-hidden="true"
-                        >
-
-                            <rect
-                                x="9"
-                                y="13"
-                                width="46"
-                                height="38"
-                                rx="7"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                            />
-
-                            <path
-                                d="M20 42V31"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="4"
-                                stroke-linecap="round"
-                            />
-
-                            <path
-                                d="M32 42V24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="4"
-                                stroke-linecap="round"
-                            />
-
-                            <path
-                                d="M44 42V28"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="4"
-                                stroke-linecap="round"
-                            />
-
-                        </svg>
-
-
-                        <span>
-                            Python Finance Application
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            Python Application
-                        </p>
-
-
-                        <h3>
-                            Personal Finance Tracker
-                        </h3>
-
-
-                        <p>
-
-                            A Python-based application for
-                            recording income, expenses,
-                            transactions and financial balances
-                            using structured data storage.
-
-                        </p>
-
-
-                        <div class="project-tech">
-
-                            <span>Python</span>
-                            <span>JSON</span>
-                            <span>CLI</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Project
-                            </a>
-
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- =================================================
-                     FUTA
-                ================================================== -->
-
-                <article class="project-card">
-
-                    <div class="project-image project-futa">
-
-                        <svg
-                            class="project-icon"
-                            viewBox="0 0 64 64"
-                            aria-hidden="true"
-                        >
-
-                            <path
-                                d="M10 26L32 13l22 13"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                                stroke-linejoin="round"
-                            />
-
-                            <path
-                                d="M15 29v22h34V29"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                            />
-
-                            <path
-                                d="M25 51V36h14v15"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                            />
-
-                            <path
-                                d="M9 54h46"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                            />
-
-                        </svg>
-
-
-                        <span>
-                            Admission Eligibility System
-                        </span>
-
-                    </div>
-
-
-                        <div class="project-tech">
-
-                            <span>PHP</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Project
-                            </a>
-
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
+        <!-- =====================================
              SKILLS
-        ================================================== -->
+        ====================================== -->
 
         <section
             id="skills"
             class="section skills-section"
         >
 
-            <div class="section-heading">
+            <div class="section-intro">
 
-                <p class="eyebrow">
-                    My Toolkit
+                <p class="section-label">
+                    SKILLS
                 </p>
 
-
                 <h2>
-                    Skills & Technologies
+                    Tools for
+                    <span>building ideas.</span>
                 </h2>
 
             </div>
 
 
-            <div class="skills-container">
+            <div class="skills-grid">
 
 
-                <div class="skill-category">
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        01
+                    </span>
 
                     <h3>
-                        Frontend Development
+                        Frontend
                     </h3>
 
+                    <p>
+                        Building responsive and interactive
+                        interfaces for the modern web.
+                    </p>
 
-                    <div class="skills-list">
+                    <div class="skill-tags">
 
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
-                        <span>Responsive Design</span>
 
                     </div>
 
-                </div>
+                </article>
 
 
 
-                <div class="skill-category">
+                <article class="skill-card">
 
-                    <h3>
-                        Backend & Programming
-                    </h3>
-
-
-                    <div class="skills-list">
-
-                        <span>Python</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JSON</span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skill-category">
+                    <span class="skill-number">
+                        02
+                    </span>
 
                     <h3>
-                        UI/UX Design
+                        UI / UX
                     </h3>
 
+                    <p>
+                        Designing interfaces around clarity,
+                        usability and visual consistency.
+                    </p>
 
-                    <div class="skills-list">
+                    <div class="skill-tags">
 
                         <span>Figma</span>
-                        <span>Wireframing</span>
-                        <span>Prototyping</span>
-                        <span>UI Design</span>
+                        <span>Wireframes</span>
+                        <span>Prototypes</span>
 
                     </div>
 
-                </div>
+                </article>
 
 
 
-                <div class="skill-category">
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        03
+                    </span>
 
                     <h3>
-                        Tools
+                        Backend
                     </h3>
 
+                    <p>
+                        Working with Python and backend
+                        technologies to power applications.
+                    </p>
 
-                    <div class="skills-list">
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>APIs</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Workflow
+                    </h3>
+
+                    <p>
+                        Using modern tools to design, develop,
+                        test and manage projects.
+                    </p>
+
+                    <div class="skill-tags">
 
                         <span>Git</span>
                         <span>GitHub</span>
@@ -742,80 +459,494 @@
 
                     </div>
 
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+     PROJECTS
+========================================== -->
+
+<section
+    id="projects"
+    class="section projects-section"
+>
+
+    <div class="section-intro">
+
+        <p class="section-label">
+            SELECTED WORK
+        </p>
+
+        <h2>
+            Projects built
+            <span>with purpose.</span>
+        </h2>
+
+        <p class="section-description">
+            A selection of digital products, applications
+            and interfaces I've designed and built while
+            developing my skills.
+        </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- =====================================
+             PROJECT 01 — IEMS
+        ====================================== -->
+
+        <article class="project-card project-featured">
+
+            <div class="project-number">
+                01
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="project-glow"></div>
+
+                <div class="project-window">
+
+                    <div class="window-bar">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="window-content">
+
+                        <div class="mock-header">
+
+                            <div class="mock-avatar"></div>
+
+                            <div class="mock-header-lines">
+
+                                <div class="mock-line small"></div>
+                                <div class="mock-line tiny"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mock-line large"></div>
+
+                        <div class="mock-line"></div>
+
+
+                        <div class="mock-dashboard">
+
+                            <div class="mock-card"></div>
+
+                            <div class="mock-card"></div>
+
+                            <div class="mock-card"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+                <p class="project-category">
+                    01 / FULL-STACK · PRODUCT
+                </p>
+
+                <h3>
+                    Intelligent Examination
+                    Management System
+                </h3>
+
+                <p>
+                    A digital examination management
+                    platform designed to improve the
+                    student experience around CBT
+                    examination centres.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Flask</span>
+
                 </div>
 
 
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View project
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
             </div>
 
-        </section>
+        </article>
 
 
 
-        <!-- =================================================
-             CONTACT
-        ================================================== -->
+        <!-- =====================================
+             PROJECT 02 — FINANCE TRACKER
+        ====================================== -->
 
-        <section
-            id="contact"
-            class="section contact-section"
-        >
+        <article class="project-card">
 
-            <div class="section-heading">
+            <div class="project-number">
+                02
+            </div>
 
-                <p class="eyebrow">
-                    Get In Touch
+
+            <div class="project-visual project-finance">
+
+                <div class="finance-card">
+
+                    <span>
+                        TOTAL BALANCE
+                    </span>
+
+                    <strong>
+                        ₦245,000
+                    </strong>
+
+                    <div class="finance-line"></div>
+
+
+                    <div class="finance-stats">
+
+                        <div>
+                            <small>INCOME</small>
+                            <b>₦320K</b>
+                        </div>
+
+                        <div>
+                            <small>EXPENSES</small>
+                            <b>₦75K</b>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+                <p class="project-category">
+                    02 / PYTHON · APPLICATION
                 </p>
 
-
-                <h2>
-                    Let's build something meaningful.
-                </h2>
-
+                <h3>
+                    Finance Tracker
+                </h3>
 
                 <p>
-
-                    I'm open to opportunities,
-                    collaborations and interesting projects
-                    where I can contribute, learn and create
-                    useful digital experiences.
-
+                    A personal finance application
+                    designed to manage income,
+                    expenses and transactions
+                    through a simple interface.
                 </p>
+
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>JSON</span>
+                    <span>CLI</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View project
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             PROJECT 03 — FUTA PORTAL
+        ====================================== -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                03
+            </div>
+
+
+            <div class="project-visual project-portal">
+
+                <div class="portal-card">
+
+                    <span>
+                        STUDENT PORTAL
+                    </span>
+
+
+                    <div class="portal-profile">
+
+                        <div class="portal-avatar"></div>
+
+                        <div>
+
+                            <div class="portal-name"></div>
+
+                            <div class="portal-email"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="portal-row"></div>
+
+                    <div class="portal-row"></div>
+
+                    <div class="portal-row short"></div>
+
+                </div>
 
             </div>
 
 
+            <div class="project-info">
+
+                <p class="project-category">
+                    03 / UI/UX · FRONTEND
+                </p>
+
+                <h3>
+                    Student Admission Portal
+                </h3>
+
+                <p>
+                    A modern admission portal concept
+                    focused on simplifying the student
+                    application and admission experience.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Figma</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+                        View project
+                        <span>↗</span>
+                    </a>
+
+                    <a
+                        href="#"
+                        class="project-github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+       <!-- =========================================
+     CONTACT
+========================================== -->
+
+<section
+    id="contact"
+    class="section contact-section"
+>
+
+    <div class="contact-card">
+
+        <div class="contact-content">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Have an idea?
+                <span>Let's build it.</span>
+            </h2>
+
+            <p class="contact-description">
+                I'm open to opportunities, collaborations,
+                freelance projects and interesting digital
+                experiences. Let's create something meaningful.
+            </p>
+
+            <div class="contact-actions">
+
+                <!-- EMAIL -->
+                <a
+                    href="mailto:your-email@example.com"
+                    class="btn btn-primary"
+                >
+                    Send me an email
+                </a>
+
+                <!-- GITHUB -->
+                <a
+                    href="https://github.com/taiwoabdulrahmon16-a11y"
+                    class="btn btn-glass"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             SOCIAL LINKS
+        ====================================== -->
+
+        <div class="social-links">
+
             <a
-                href="mailto:your-email@example.com"
-                class="btn btn-primary"
+                href="https://github.com/taiwoabdulrahmon16-a11y"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                Contact Me
+                <span>GitHub</span>
+                <span>↗</span>
             </a>
 
-        </section>
 
-    </main>
-
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer class="site-footer">
-
-        <p>
-            © SaGe001. All rights reserved.
-        </p>
-
-    </footer>
+            <!-- REPLACE THIS WITH YOUR REAL LINKEDIN -->
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>LinkedIn</span>
+                <span>↗</span>
+            </a>
 
 
+            <!-- WE CAN ADD YOUR OTHER PROFESSIONAL LINK HERE -->
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>More about me</span>
+                <span>↗</span>
+            </a>
 
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
+        </div>
 
-    <script src="js/script.js"></script>
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+    <p>
+        © <span id="current-year"></span>
+        SaGe001.
+        Designed & built with purpose.
+    </p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="js/script.js"></script>
 
 </body>
 
